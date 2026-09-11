@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MySiddur — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --ink:#16181d; --muted:#5b6070; --bg:#fbfbfd; --card:#fff; --line:#e4e6ec; --accent:#1f3a93; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#eceef4; --muted:#a2a8ba; --bg:#101217; --card:#171a21; --line:#282c36; --accent:#8fa8ff; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0 20px 72px; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; }
+  header { padding: 56px 0 8px; }
+  h1 { font-size: 2rem; margin: 0 0 6px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 1rem; margin: 22px 0 6px; }
+  p, li { color: var(--ink); }
+  .sub { color: var(--muted); margin: 0; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+            padding: 4px 22px 22px; margin-top: 18px; }
+  ul { padding-left: 20px; }
+  li { margin: 7px 0; }
+  a { color: var(--accent); }
+  .lang { border-top: 1px solid var(--line); margin-top: 56px; padding-top: 8px; }
+  footer { color: var(--muted); font-size: .875rem; margin-top: 40px; }
+  code { background: color-mix(in srgb, var(--line) 60%, transparent); padding: 1px 5px; border-radius: 5px; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="sub">MySiddur · Last updated 11 September 2026</p>
+</header>
+
+<section>
+<h2>The short version</h2>
+<p>MySiddur is a siddur. It does not sell your data, does not show ads, and carries no
+advertising or analytics SDKs — the only third-party library in the app is the Supabase client.
+What follows is every piece of data the app touches and where it goes.</p>
+</section>
+
+<section>
+<h2>What the app collects</h2>
+
+<h3>Your account</h3>
+<p>Signing in creates an account with your email address and a password, handled by
+Supabase Auth. We store a profile row with your email and the display name you choose.
+That is all the account holds.</p>
+
+<h3>Your location</h3>
+<p>The app asks for your location <em>while in use</em> to calculate prayer times (zmanim)
+and candle lighting for where you actually are. Your coordinates are used on your device to
+compute those times, and are passed to Apple's geocoder to turn them into a place name to
+show on screen. Your location is never sent to our servers and is never stored by us.
+Denying the permission keeps the rest of the app working.</p>
+
+<h3>Your calendar</h3>
+<p>If you choose to add a Jewish birthday or a yahrzeit to your iPhone calendar, the app
+writes that single event. It does not read, upload or analyse your existing calendar.</p>
+
+<h3>Your microphone</h3>
+<p>The microphone is used only during a voice conversation, and only while that screen is
+open. Audio is streamed to OpenAI to produce the response and is not recorded or kept by us.</p>
+
+<h3>Prayers you ask for</h3>
+<p>When you use the AI chat or the voice call, the text of your request is sent to OpenAI
+through our own server so it can generate the answer. When you ask to hear a prayer read
+aloud, the text of that prayer is sent to ElevenLabs to be turned into audio. We do not store
+these conversations. We keep only a per-user counter of how many requests you have made, to
+stop abuse of the service.</p>
+
+<h3>Prayers you save</h3>
+<p>Saved prayers are written to a file inside the app's own storage on your device. They are
+not uploaded to our servers, and they disappear when you delete the app.</p>
+</section>
+
+<section>
+<h2>Who else sees the data</h2>
+<ul>
+  <li><strong>Supabase</strong> — account, authentication and the request counter.</li>
+  <li><strong>OpenAI</strong> — the text and audio of your AI chat and voice requests.</li>
+  <li><strong>ElevenLabs</strong> — the text of a prayer you ask to have read aloud.</li>
+  <li><strong>Apple</strong> — your coordinates, to resolve the name of the place.</li>
+</ul>
+<p>Nobody else. We do not share or sell data with advertisers, data brokers or anyone
+comparable.</p>
+</section>
+
+<section>
+<h2>Keeping and deleting your data</h2>
+<p>Your account and profile are kept for as long as the account exists. To have your account
+and everything attached to it deleted, write to <a href="mailto:losdety@gmail.com">losdety@gmail.com</a> from
+the address you signed up with; the deletion is done within 30 days. Saved prayers live only
+on your device, so deleting the app removes them immediately.</p>
+</section>
+
+<section>
+<h2>Children</h2>
+<p>MySiddur is rated 4+ and contains nothing unsuitable for children, but it is not directed
+at them and does not knowingly collect data from children under 13.</p>
+</section>
+
+<section>
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top changes with it. Material changes will be
+announced in the app.</p>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p><a href="mailto:losdety@gmail.com">losdety@gmail.com</a></p>
+</section>
+
+<div class="lang"></div>
+
+<header>
+  <h1>Política de privacidad</h1>
+  <p class="sub">MySiddur · Actualizada el 11 de septiembre de 2026</p>
+</header>
+
+<section>
+<h2>Resumen</h2>
+<p>MySiddur es un sidur. No vende tus datos, no enseña publicidad y no lleva ningún SDK de
+anuncios ni de analítica: la única biblioteca de terceros que incluye es el cliente de
+Supabase. Debajo está cada dato que la app toca y a dónde va.</p>
+</section>
+
+<section>
+<h2>Qué recoge la app</h2>
+
+<h3>Tu cuenta</h3>
+<p>Al registrarte se crea una cuenta con tu correo y una contraseña, gestionada por Supabase
+Auth. Guardamos una ficha con tu correo y el nombre que elijas. Nada más.</p>
+
+<h3>Tu ubicación</h3>
+<p>La app pide la ubicación <em>mientras la usas</em> para calcular los zmanim y el encendido
+de velas donde estás de verdad. Las coordenadas se usan en tu propio dispositivo para
+calcular esos horarios, y se le pasan al geocodificador de Apple para convertirlas en el
+nombre del sitio que ves en pantalla. Tu ubicación nunca llega a nuestros servidores ni la
+guardamos. Si deniegas el permiso, el resto de la app sigue funcionando.</p>
+
+<h3>Tu calendario</h3>
+<p>Si decides añadir un cumpleaños judío o un yahrzeit al calendario del iPhone, la app
+escribe ese único evento. No lee, ni sube, ni analiza tu calendario.</p>
+
+<h3>Tu micrófono</h3>
+<p>El micrófono se usa solo durante una conversación de voz, y solo mientras esa pantalla
+está abierta. El audio va a OpenAI para generar la respuesta; nosotros no lo grabamos ni lo
+conservamos.</p>
+
+<h3>Los rezos que pides</h3>
+<p>Cuando usas el chat o la llamada con la IA, el texto de lo que pides se manda a OpenAI a
+través de nuestro propio servidor para generar la respuesta. Cuando pides oír un rezo en voz
+alta, el texto de ese rezo se manda a ElevenLabs para convertirlo en audio. No guardamos esas
+conversaciones. Solo llevamos una cuenta de cuántas peticiones hace cada usuario, para evitar
+abusos del servicio.</p>
+
+<h3>Los rezos que guardas</h3>
+<p>Los rezos guardados se escriben en un fichero dentro del almacenamiento de la app, en tu
+dispositivo. No se suben a ningún servidor y desaparecen si borras la app.</p>
+</section>
+
+<section>
+<h2>Quién más ve los datos</h2>
+<ul>
+  <li><strong>Supabase</strong> — la cuenta, la autenticación y el contador de peticiones.</li>
+  <li><strong>OpenAI</strong> — el texto y el audio de tus peticiones a la IA.</li>
+  <li><strong>ElevenLabs</strong> — el texto del rezo que pides escuchar.</li>
+  <li><strong>Apple</strong> — tus coordenadas, para resolver el nombre del sitio.</li>
+</ul>
+<p>Nadie más. No compartimos ni vendemos datos a anunciantes, intermediarios de datos ni
+nada parecido.</p>
+</section>
+
+<section>
+<h2>Cuánto se guarda y cómo se borra</h2>
+<p>La cuenta y su ficha se conservan mientras la cuenta exista. Para que borremos tu cuenta y
+todo lo asociado, escribe a <a href="mailto:losdety@gmail.com">losdety@gmail.com</a> desde el correo con el
+que te registraste; se hace en un plazo de 30 días. Los rezos guardados viven solo en tu
+dispositivo, así que borrar la app los elimina al momento.</p>
+</section>
+
+<section>
+<h2>Menores</h2>
+<p>MySiddur está clasificada 4+ y no contiene nada inadecuado para menores, pero no está
+dirigida a ellos y no recoge datos de menores de 13 años a sabiendas.</p>
+</section>
+
+<section>
+<h2>Cambios</h2>
+<p>Si esta política cambia, cambia también la fecha de arriba. Los cambios importantes se
+avisan dentro de la app.</p>
+</section>
+
+<section>
+<h2>Contacto</h2>
+<p><a href="mailto:losdety@gmail.com">losdety@gmail.com</a></p>
+</section>
+
+<footer>MySiddur</footer>
+
+</main>
+</body>
+</html>
